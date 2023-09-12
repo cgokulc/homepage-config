@@ -1,0 +1,200 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/services
+- Monitoring:
+    - CPU Usage:
+        widget: 
+            type: glances
+            url: 
+            metric: cpu
+    
+    - Memory:
+        widget: 
+            type: glances
+            url: 
+            metric: memory
+
+    - Network:
+        widget: 
+            type: glances
+            url: 
+            metric: network:enp2s0
+
+    - Process:
+        widget:
+            type: glances
+            url: 
+            metric: process
+
+
+- Entertainment:
+    - Jellyfin:
+        icon: jellyfin
+        href: 
+        ping: 
+        description: Movie time.
+        server: home-server
+        container: jellyfin
+        widget:
+            type: jellyfin
+            url: 
+            key: 
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true
+
+    - Jellyseerr:
+        icon: jellyseerr
+        href: 
+        description: Request manger.
+        server: home-server
+        container: jellyseerr
+        widget:
+            type: jellyseerr
+            url: 
+            key: 
+
+    - CallibreWeb:
+        icon: calibre
+        href: 
+        description: All books in one place available from anywhere.        
+        server: home-server
+        container: calibre-web
+
+    - Radarr:
+       icon: radarr
+       href: 
+       description: Browse movies to download.
+       server: home-server
+       container: radarr
+       widget:
+           type: radarr
+           url: 
+           key: 
+           enableQueue: true
+
+    - Sonarr:
+        icon: sonarr
+        href: 
+        description: Browse TV shows to download.
+        server: home-server
+        container: sonarr
+        widget:
+            type: sonarr
+            url: 
+            key: 
+
+
+- Tools:
+
+    - Uptime kuma:
+        icon: uptime-kuma
+        href: 
+        description: Health checks.
+        server: home-server
+        container: uptime-kuma
+        widget:
+            type: uptimekuma
+            url: 
+            key: 
+            slug: homeserver
+
+    - Pihole:
+        icon: pi-hole
+        href: 
+        server: home-server
+        container: pihole
+        widget:
+            type: pihole
+            url: 
+            key: 
+
+    - Gotify:
+        icon: gotify
+        href: 
+        description: Notify things.
+        server: home-server
+        container: gotify
+        widget:
+            type: gotify
+            url: 
+            key: 
+
+    - Gogs:
+        icon: gogs
+        href: 
+        description: Personal github.
+        server: home-server
+        container: gogs
+
+    - Transmission:
+        icon: transmission
+        href: 
+        description: Download torrents.
+        server: home-server
+        container: transmission
+        widget:
+            type: transmission
+            url: 
+            username: 
+            password: 
+
+    - Yacht:
+        icon: yacht
+        href: 
+        description: manage docker containers.
+        server: home-server
+        container: yacht
+
+- Productivity:
+    - Trilium:
+        icon: trilium
+        href: 
+        description: All kinds of note taking.
+        server: home-server
+        container: trilium
+    
+    - DailyTxT:
+        icon: mdi-notebook
+        href: 
+        description: Journal.
+        server: home-server
+        container: dailytxt
+
+    - Jupyter:
+        icon: jupyter
+        href: 
+        description: Jupyter notebook. 
+    
+    - SniBox:
+        href: 
+        description: Useful Snipets made available handy.
+        server: home-server
+        container: Snibox
+
+    - Kanboard:
+        icon: mdi-checkbox-marked-circle-auto-outline
+        href: 
+        description: Kanban boards.
+        server: home-server
+        container: kanboard
+
+    - WikiJs:
+        icon: mdi-wikipedia
+        href: 
+        description: Personal wiki page.
+        server: home-server
+        container: Wikijs
+        
+    - Linkding:
+        icon: mdi-bookmark
+        href: 
+        description: Personal bookmark manger.
+        server: home-server
+        container: linkding
+
+    - Code server:
+        icon: code-server
+        href: 
+        description: VS code in web.
+        server: home-server
+        container: code-server

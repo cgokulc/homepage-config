@@ -1,0 +1,47 @@
+
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/widgets
+
+#- resources:
+#    label: Vitals
+#    cpu: true
+#    memory: true
+
+#- resources:
+#    label: SSD
+#    expanded: true
+#    disk: 
+#        - /
+#        - /home
+
+#- resources:
+#    label: HDD1
+#    expanded: true
+#    disk:
+#        - /mnt/PERSONAL
+#        - /mnt/BACKUP
+
+#- resources:
+#    label: HDD2
+#    expanded: true
+#    disk:
+#        - /mnt/cd_caddy
+
+
+- search:
+    provider: duckduckgo
+    target: _blank
+
+- glances:
+    url: 
+#    cputemp: true # disabled by default
+    uptime: true # disabled by default
+    disk:
+        - /d0
+        - /d1
+        - /d2
+        - /d3
+        - /d4
+    expanded: true # show the expanded view
+#    refresh: 5
+#    label: Home-server # optional

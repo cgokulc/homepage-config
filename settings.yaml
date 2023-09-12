@@ -1,0 +1,29 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/settings
+
+headerStyle: boxed
+
+background:
+    image: https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg
+    blur: sm
+    brightness: 100
+    opacity: 70
+
+cardBlur: md
+
+theme: dark
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+showStats: true
+
+#hideErrors: true
+
+layout:
+    Monitoring:
+         style: row
+         columns: 4
+         header: false
